@@ -26,8 +26,12 @@ const app = express();
 // Enable CORS access to this server
 app.use(cors());
 
+//Enable Express parse JSON
+app.use(express.json());
+
 // using the routers
 app.use('/sightings', sightingRouter)
+
 
 app.listen(PORT, () => {
   console.log(`Express app listening on port ${PORT}!`);
