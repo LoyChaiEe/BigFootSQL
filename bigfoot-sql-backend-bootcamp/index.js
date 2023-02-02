@@ -14,7 +14,7 @@ const db = require('./db/models/index')
 const { comment, sighting } = db;
 
 // initializing Controllers -> note the lowercase for the first word
-const sightingsController = new SightingsController(sighting, comment)
+const sightingsController = new SightingsController(sighting, comment) //there is no comment models in the db?
 
 // inittializing Routers
 const sightingRouter = new SightingsRouter(sightingsController).routes()

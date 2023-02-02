@@ -6,7 +6,8 @@ const SightingPreview = (props) => {
     <Card bg="dark">
       <Card.Body>
         <Card.Title>
-          {`${props.data.YEAR} ${props.data.SEASON} ${props.data.MONTH}`}
+          {`${new Date(props.data.date).toDateString()} 
+          | ${props.data.location}`}
         </Card.Title>
       </Card.Body>
     </Card>
